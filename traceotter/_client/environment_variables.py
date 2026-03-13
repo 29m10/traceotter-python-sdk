@@ -41,7 +41,7 @@ TRACEOTTER_HOST = "TRACEOTTER_HOST"
 
 Host of Traceotter API. Can be set via `TRACEOTTER_HOST` environment variable.
 
-**Default value:** ``"https://cloud.traceotter.com"``
+**Default value:** ``"https://api.traceotter.com"``
 """
 
 TRACEOTTER_DEBUG = "TRACEOTTER_DEBUG"
