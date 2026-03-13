@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Distribution name on PyPI (install via `pip install traceotter`)
+name = "traceotter"
+version = "0.1.0"
+description = "Agent observability Python SDK for Traceotter"
+readme = "traceotter/api/README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Nikhil Garakapati" }
+]
+keywords = ["traceotter", "observability", "agents", "llm", "sdk"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "httpx>=0.24,<1.0",
+  "pydantic>=1.10,<3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/29m10/traceotter-python-sdk"
+Repository = "https://github.com/29m10/traceotter-python-sdk"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["traceotter*"]
+
+[tool.setuptools.package-data]
+"traceotter" = ["py.typed"]
+
